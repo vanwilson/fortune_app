@@ -9,7 +9,7 @@ class MyExamplesController < ApplicationController
     numbers = []
     count = 0
     while count < 6
-      number = rand(60)
+      number = rand(59) + 1
       numbers.push(number)
       count += 1
     end
