@@ -15,4 +15,9 @@ class MyExamplesController < ApplicationController
     end
     render json: numbers.join(" ")
   end
+
+  # def page_visits_method
+  #   number = 0
+  #   render json: number
+  # end                    Can't do track page visits until we learn how to interact with the data in the database.
 end
