@@ -13,6 +13,6 @@ class MyExamplesController < ApplicationController
       numbers.push(number)
       count += 1
     end
-    render json: numbers
+    render json: numbers.join(" ")
   end
 end
