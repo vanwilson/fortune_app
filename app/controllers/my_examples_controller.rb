@@ -6,13 +6,10 @@ class MyExamplesController < ApplicationController
 
   def lotto_method
     numbers = []
-    count = 0
-    while count < 6
-      number = rand(59) + 1
-      numbers.push(number)
-      count += 1
+    6.times do
+      numbers << rand(1..60)
     end
-    render json: numbers.join(" ")
+    render json: numbers
   end
 
   # def page_visits_method
